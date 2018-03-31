@@ -1,0 +1,51 @@
+	.play
+	{
+		position: absolute;
+		background-color: blue;
+		height: 90.5%;
+		margin-left: -0.6%;
+		width: 51.9%;
+		text-align: center;
+
+	}
+	.play h1
+	{
+		margin-top: 230px;
+		font-size: 60px;
+	}
+	.play:hover
+	{
+	  overflow:hidden;
+  -webkit-animation: switch 5s infinite; /* Chrome, Safari, Opera */ 
+    animation: switch 555s infinite;
+   background-repeat:  no-repeat;
+}
+@-webkit-keyframes switch {
+    0% {background-image: url('http://4.bp.blogspot.com/-NdZwbtVY3ZU/UaSLs40DQ3I/AAAAAAAAAiM/stS4X6H1JtU/s1600/vidgif1.gif');}
+}
+	.dep
+	{
+		position: absolute;
+		background-color: red;
+		margin-left: 50%;
+		height: 90.5%;
+		width: 49.35%;
+		text-align: center;
+
+	}
+	.dep h1
+	{
+		margin-top: 230px;
+		font-size: 60px;
+	}
+
+	.dep:hover
+	{
+	  overflow:hidden;
+  -webkit-animation: switch_d 5s infinite; /* Chrome, Safari, Opera */ 
+    animation: switch_d 555s infinite;
+   background-repeat:  no-repeat;
+}
+@-webkit-keyframes switch_d {
+    0% {background-image: url('https://media.giphy.com/media/m6OomwWCojfS8/giphy.gif');}
+}
