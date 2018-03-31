@@ -5,6 +5,10 @@
 <head>
 	<title>Choose Template</title>
 <style type="text/css">
+	body
+{
+    overflow-x: hidden;
+}
 ::-webkit-scrollbar {
     width: 10px;
 }
