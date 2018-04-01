@@ -127,6 +127,7 @@ font-family: Comic Sans MS;}
   background-color: black;
   padding: 10px 5px;
   color: white;
+  opacity: 0.75;
 }
 
 .header a {
@@ -159,6 +160,11 @@ font-family: Comic Sans MS;}
   float: right;
 }
 
+#ScreenSize
+{
+  display: none;
+}
+
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
@@ -169,28 +175,49 @@ font-family: Comic Sans MS;}
     float: none;
   }
 }
+
 </style>
+<script type="text/javascript">
+  function checkScreen() {
+    var width = screen.width;
+var height = screen.height;
+//alert("width: "+width +" , height: "+height);
+
+if(width<1280)
+{
+    var one=document.getElementById("ScreenSize");
+    one.style.display="inline-block";
+    document.getElementById("mybt1").style.pointerEvents="none";
+    document.getElementById("mybt1").style.cursor="default";
+    document.getElementById("mybt2").style.pointerEvents="none";
+    document.getElementById("mybt2").style.cursor="default";
+  }
+}
+</script>
 </head>
-<body>
+<body onload="checkScreen()">
+  <h3 id="ScreenSize" align="center">
+    Please open the page in a resolution greater than or equal to 1280 pixels (more than an 13.3 inch laptop screen) to access the rest of the site.
+  </h3>
   
 
-<div class="bgimg-1">
+
  <div class="header">
   <a href="#default" class="logo"><img src="assets/logoAsteri2.gif" style="width:140px;height:70px"></a>
   <div class="header-right">
-    <a class="active" href="login.php" style="margin-top: 14px">Login</a>
+    <a id="mybt1" class="active" href="login.php" style="margin-top: 14px">Login</a>
     <a href="#contact"  style="margin-top: 14px">Contact</a>
     <a href="#about"  style="margin-top: 14px">About</a>
   </div>
-</div><br>
+</div>
+<div class="bgimg-1">
   <div class="caption">
     <span class="border">It all starts with your Imagination!</span><br><br><br>
-  <a href="login.php">
+  <a href="login.php" id="mybt2">
   <button class="button2" > Get Started</button>
 </a>
   </div>
 </div>
-
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center;">Games Developed</h3>
   <p>Ever thought you could create a game like mario or Flappy Bird easily, without writing any code? Well you`ve come to the right place! Asteri provides loads of templates by which you can create many kinds of games.</p>
