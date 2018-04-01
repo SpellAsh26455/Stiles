@@ -78,6 +78,7 @@ font-family: "Comic Sans MS";
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="p&d.php"><label>Home</label></a>
   <a href="viewProdemo_2.php"><label>My Profile</label></a>
+	 <a href="UserGuide.php"><label>Developer Guide</label></a>
   <a href="#">About us</a>
 </div>
 
